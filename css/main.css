@@ -1621,8 +1621,8 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #resume {
-	padding-top: 12rem;
-	padding-bottom: 12rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 
 #resume .resume-header {
@@ -1791,8 +1791,8 @@ header .logo a {
  */
 #portfolio {
 	background: #FFFFFF;
-	padding-top: 12rem;
-	padding-bottom: 12rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 #portfolio .folio-item {
 	padding: 0;
@@ -2027,8 +2027,8 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #cta {
-	padding-top: 10.2rem;
-	padding-bottom: 9rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 	text-align: center;
 }
 #cta p.lead {
@@ -2099,8 +2099,8 @@ header .logo a {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
-	padding-top: 12rem;
-	padding-bottom: 12rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 	color: white;
 	position: relative;
 }
@@ -2184,8 +2184,8 @@ header .logo a {
  */
 #stats {
 	background: #990047;
-	padding-top: 7.2rem;
-	padding-bottom: 6rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 	text-align: center;
 }
 #stats .row {
@@ -2251,8 +2251,8 @@ header .logo a {
  */
 #contact {
 	background: #151515;
-	padding-top: 12rem;
-	padding-bottom: 7.2rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 #contact .section-intro h1 {
 	color: white;
@@ -2627,7 +2627,7 @@ footer .copyright span:last-child::after {
 
 .website {
 	text-decoration: none;
-	color: #888888;
+	color: #888888 !important;
 }
 
 .social-icon {
