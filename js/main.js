@@ -67,7 +67,7 @@
 	/*----------------------------------------------------- */
 	/* Stat Counter
   	------------------------------------------------------- */
-   var statSection = $("#stats"),
+   const statSection = $("#stats"),
        stats = $(".stat-count");
 
    statSection.waypoint({
@@ -103,7 +103,7 @@
 	/*---------------------------------------------------- */
 	/*	Masonry
 	------------------------------------------------------ */
-	var containerProjects = $('#folio-wrapper');
+	const containerProjects = $('#folio-wrapper');
 
 	containerProjects.imagesLoaded( function() {
 
@@ -137,7 +137,7 @@
 	/*-----------------------------------------------------*/
   	/* Navigation Menu
    ------------------------------------------------------ */  
-   var toggleButton = $('.menu-toggle'),
+   const toggleButton = $('.menu-toggle'),
        nav = $('.main-navigation');
 
    // toggle button
@@ -194,7 +194,7 @@
 	 	
 	 	e.preventDefault();
 
-   	var target = this.hash,
+   	const target = this.hash,
     	$target = $(target);
 
     	$('html, body').stop().animate({
@@ -222,7 +222,7 @@
 		/* submit via ajax */
 		submitHandler: function(form) {
 
-			var sLoader = $('#submit-loader');
+			const sLoader = $('#submit-loader');
 
 			$.ajax({      	
 
@@ -268,10 +268,10 @@
  	/*----------------------------------------------------- */
   	/* Back to top
    ------------------------------------------------------- */ 
-	var pxShow = 300; // height on which the button will show
-	var fadeInTime = 400; // how slow/fast you want the button to show
-	var fadeOutTime = 400; // how slow/fast you want the button to hide
-	var scrollSpeed = 300; // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
+	const pxShow = 300; // height on which the button will show
+	const fadeInTime = 400; // how slow/fast you want the button to show
+	const fadeOutTime = 400; // how slow/fast you want the button to hide
+	const scrollSpeed = 300; // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
 
    // Show or hide the sticky footer button
 	jQuery(window).scroll(function() {
@@ -289,3 +289,20 @@
 	});		
 
 })(jQuery);
+
+
+function readMore(btn) {
+	var content = btn.previousElementSibling; // Get the content of the timeline block
+	var dots = content.querySelector("#dots");
+	var moreText = content.querySelector("#more");
+  
+	if (dots.style.display === "none") {
+	  dots.style.display = "inline";
+	  btn.innerHTML = "Read more"; 
+	  moreText.style.display = "none";
+	} else {
+	  dots.style.display = "none";
+	  btn.innerHTML = "Read less"; 
+	  moreText.style.display = "inline";
+	}
+  }

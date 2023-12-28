@@ -2753,3 +2753,9 @@ footer .copyright span:last-child::after {
 		color: rgb(219, 31, 106);
   
 	  }
+
+
+	  #more {
+		display: none;
+		transition: opacity 0.5s ease; /* Add smooth transition */
+	  }
